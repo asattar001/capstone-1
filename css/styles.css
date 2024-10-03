@@ -1,15 +1,13 @@
-
 /* products*/
-.card img{
-    height: 300px;
-    object-fit: contain;
-
+.card img {
+  height: 300px;
+  object-fit: contain;
 }
 
-.card{
-    margin-bottom: 1.5rem;
+.card {
+  margin-bottom: 1.5rem;
 }
 
-#img-size{
-    padding: 2rem;
+#img-size {
+  padding: 2rem;
 }

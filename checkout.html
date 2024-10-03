@@ -52,10 +52,11 @@
       </div>
     </header>
 
-    <main class="container px-0 my-5 rounded border border-dark-subtle d-flex">
-      <form class="d-flex flex-column p-5" style="width: 60%; background-color: #f8f9fb">
-        <h3>Checkout</h3>
-        <h5>Billing Address</h5>
+    <main class="container px-0 my-5 rounded border border-dark-subtle d-flex flex-column flex-md-row">
+      <!--Billing Form -->
+      <form class="d-flex flex-column p-5 flex-grow-1" style="background-color: #f8f9fb">
+        <h3 class="mb-3">Checkout</h3>
+        <h5 class="mb-3">Billing Address</h5>
         <div class="mb-3 d-flex">
           <div class="me-3 flex-grow-1">
             <label for="firstName" class="form-label">First Name</label>
@@ -67,7 +68,7 @@
           </div>
         </div>
 
-        <!-- Email (optional) -->
+        <!-- Email-->
         <div class="mb-3">
           <label for="email" class="form-label">Email (optional)</label>
           <input type="email" class="form-control" id="email" placeholder="Email" />
@@ -87,7 +88,7 @@
             <label for="city" class="form-label">City</label>
             <input type="text" class="form-control" id="city" placeholder="City" />
           </div>
-          <div class="flex-grow-1">
+          <div class="me-3 flex-grow-1">
             <label for="state" class="form-label">State</label>
             <select class="form-select" id="state">
               <option selected>Choose...</option>
@@ -96,9 +97,9 @@
           </div>
         </div>
         <hr />
-        <!-- radio -->
-        <div>
-          <h5>Payment</h5>
+        <!--Payment -->
+        <div class="mb-3">
+          <h5 class="mb-3">Payment</h5>
           <div class="form-check">
             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
             <label class="form-check-label" for="flexRadioDefault1"> Credit Card </label>
@@ -111,66 +112,98 @@
             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
             <label class="form-check-label" for="flexRadioDefault1"> PayPal </label>
           </div>
-          <div class="mb-3 d-flex">
-            <div class="me-3 flex-grow-1">
-              <label for="pass-input" class="form-label">Name on Card</label>
-              <input type="password" class="form-control" id="pass-input" aria-describedby="emailHelp" required />
-              <p class="form-text">Full name as displayed on card</p>
-            </div>
-            <div class="flex-grow-1">
-              <label for="pass-input" class="form-label">Credit Card Number</label>
-              <input type="password" class="form-control" id="pass-input" required />
-            </div>
+        </div>
+        <div class="mb-3 d-flex">
+          <div class="me-3 flex-grow-1">
+            <label for="pass-input" class="form-label">Name on Card</label>
+            <input type="password" class="form-control" id="pass-input" aria-describedby="emailHelp" required />
+            <p class="form-text">Full name as displayed on card</p>
           </div>
-
-          <div class="mb-3 d-flex">
-            <div class="me-3 flex-grow-1">
-              <label for="firstName" class="form-label">Expiration</label>
-              <input type="text" class="form-control" id="firstName" />
-            </div>
-            <div class="flex-grow-1">
-              <label for="lastName" class="form-label">CVV</label>
-              <input type="text" class="form-control" id="lastName" />
-            </div>
+          <div class="flex-grow-1">
+            <label for="pass-input" class="form-label">Credit Card Number</label>
+            <input type="password" class="form-control" id="pass-input" required />
           </div>
         </div>
 
-        <!-- Order Summary -->
-
-        <h5>Order Summary</h5>
-        <hr />
-
-        <div>
-          <div class="d-flex justify-content-between">
-            <p>Subtotal (2 items):</p>
-            <p class="fw-bold">$306.00</p>
+        <div class="mb-3 d-flex">
+          <div class="me-3 flex-grow-1">
+            <label for="firstName" class="form-label">Expiration</label>
+            <input type="text" class="form-control" id="firstName" />
           </div>
-
-          <div class="d-flex justify-content-between">
-            <p>Shipping:</p>
-            <p class="text-success">FREE</p>
-          </div>
-
-          <div class="d-flex justify-content-between">
-            <p>Total before tax:</p>
-            <p>$306.00</p>
-          </div>
-
-          <div class="d-flex justify-content-between">
-            <p>Tax:</p>
-            <p>$0.00</p>
+          <div class="flex-grow-1">
+            <label for="lastName" class="form-label">CVV</label>
+            <input type="text" class="form-control" id="lastName" />
           </div>
         </div>
-
-        <hr />
-        <div class="d-flex justify-content-between">
-          <p>Order total</p>
-          <p>$306.00</p>
-        </div>
-
-        <button class="btn btn-primary mt-5 align-self-center">Place Your Order</button>
       </form>
+
+      <!--Cart-->
+      <div class="p-5 d-flex flex-column flex-grow-1 justify-content-between">
+        <div>
+          <h3>Cart</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="px-0 border-0" scope="col"><h5>Items</h5></th>
+              </tr>
+            </thead>
+            <tbody class="border-top">
+              <tr class="align-baseline">
+                <td scope="row"><img style="height: 50px; width: 50px" src="images/products/1.webp" alt="" /></td>
+                <td class="text-center">Qty: <input type="text" value="1" style="width: 2rem" /></td>
+                <td class="text-end fw-bold">$134.00</td>
+              </tr>
+
+              <tr class="align-baseline">
+                <td scope="row"><img style="height: 50px; width: 50px" src="images/products/3.webp" alt="" /></td>
+                <td class="text-center">Qty: <input type="text" value="1" style="width: 2rem" /></td>
+                <td class="text-end fw-bold">$172.00</td>
+              </tr>
+
+              <tr class="align-baseline">
+                <td scope="row"><img style="height: 50px; width: 50px" src="images/products/4.webp" alt="" /></td>
+                <td class="text-center">Qty: <input type="text" value="1" style="width: 2rem" /></td>
+                <td class="text-end fw-bold">$157.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Order Summary -->
+        <div>
+          <h3 class="mb-4">Order Summary</h3>
+          <div>
+            <div class="d-flex justify-content-between">
+              <p>Subtotal (3 items):</p>
+              <p class="fw-bold">$463.00</p>
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <p>Shipping:</p>
+              <p class="text-success">FREE</p>
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <p>Total before tax:</p>
+              <p>$463.00</p>
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <p>Tax:</p>
+              <p>$41.00</p>
+            </div>
+          </div>
+
+          <hr />
+          <div class="d-flex justify-content-between">
+            <p>Order total:</p>
+            <p class="">$504.00</p>
+          </div>
+
+          <button class="btn btn-primary mt-5 align-self-center">Place Your Order</button>
+        </div>
+      </div>
     </main>
+
     <footer style="background-color: #e9ecef">
       <div class="container" style="padding-top: 6rem">
         <hr />
