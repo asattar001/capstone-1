@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <title>Document</title>
+    <title>Sign In</title>
   </head>
   <body>
-    <main class="d-flex flex-column justify-content-center align-items-center" style="height: 90vh">
+    <main class="d-flex flex-column justify-content-center align-items-center vh-100">
       <section>
-        <form class="container p-5 mb-3 rounded border border-dark-subtle" style="background-color: #f8f9fb">
+        <form class="container p-5 mb-3 rounded border border-dark-subtle bg-body-tertiary">
           <a href="/">
             <svg id="logo-36" width="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -25,37 +25,35 @@
               ></path>
             </svg>
           </a>
-          <h3>Sign in</h3>
+          <h3 class="my-3">Sign in</h3>
           <div class="mb-3">
-            <label for="email-input" class="form-label">Email</label>
+            <label for="email" class="form-label">Email</label>
             <input
               type="email"
               placeholder="Email"
               class="form-control"
-              id="email-input"
+              id="email"
               aria-describedby="emailHelp"
               required
             />
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
           </div>
           <div class="mb-3">
-            <label for="pass-input" class="form-label">Password</label>
-            <input type="password" placeholder="Password" class="form-control" id="pass-input" required />
+            <label for="pass" class="form-label">Password</label>
+            <input type="password" placeholder="Password" class="form-control" id="pass" minlength="8" required />
             <a href="">Forgot Password?</a>
           </div>
           <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <input type="checkbox" class="form-check-input" id="remember-me" />
+            <label class="form-check-label" for="remember-me">Remember me</label>
           </div>
-          <button type="submit" class="btn btn-primary">Sign In</button>
+          <button type="submit" class="btn btn-primary px-4">Sign In</button>
         </form>
-        <div style="text-align: center">
+        <div class="text-center">
           <p>OR</p>
           <a class="btn btn-primary" href="/registration.html">Create an Account</a>
         </div>
       </section>
     </main>
-
-    <footer></footer>
   </body>
 </html>
