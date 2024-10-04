@@ -7,7 +7,7 @@ The site serves as a digital storefront, featuring a modern interface for browsi
 
 ## Features:
 - **Home Page**: Engaging landing page with promotional banners and featured products.
-- **Product Gallery**: A grid layout showcasing products with images, descriptions, prices, and “Add to Cart” functionality.
+- **Product Page**: A grid layout showcasing products with images, descriptions, prices, and “Add to Cart” functionality.
 - **Sign Up / Sign In**: User authentication pages for account creation and login, enhancing user experience and security.
 - **Checkout Page**: Streamlined checkout process for users to review their cart and enter shipping/payment information.
 
