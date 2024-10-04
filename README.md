@@ -21,6 +21,6 @@ The site serves as a digital storefront, featuring a modern interface for browsi
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/e-commerce-site.git
+   https://github.com/asattar001/capstone-1.git
 2. Open the Project: Navigate to the project directory and open `index.html` in your web browser.
 
