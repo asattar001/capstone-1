@@ -3,11 +3,19 @@
   height: 300px;
   object-fit: contain;
 }
-
 .card {
   margin-bottom: 1.5rem;
 }
+.img-p {
+  padding: 2.5rem;
+}
 
-#img-size {
-  padding: 2rem;
+/* checkout */
+.td-img{
+  height: 50px; 
+  width: 50px
+}
+
+td input{
+  width: 2rem
 }
